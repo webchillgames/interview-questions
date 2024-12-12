@@ -105,13 +105,12 @@
 - [Разница между `cookie`, `sessionStorage` и `localStorage`?](https://youtu.be/nvktMVFM0_M?t=604)
 
 
-
 |  что | cookie  |  sessionStorage | localStorage  |   
 |---|---|---|---|
 | инициатор  | клиент/сервер  |  клиент |  клиент |  
 |  срок | вручную  | до закрытия вкладки  |  сколько угодно |   
 |  связь с доменом |  да |  нет | нет  |   
-| место | 4кб|5мб|5мб|
+| место | 4кб | 5мб | 5мб |
 |доступ|любое окно|вкладка|любое окно|
 
 
@@ -120,19 +119,60 @@
   Протокол
   
 - [Из чего состоит `HTTP`-запрос?](https://youtu.be/w-vUj0gHGgg?t=483)
+
+  Путь к ресурсу
+  Метод
+  Версия протокола
+  Headers
+  Body
+  
 - [Какие методы может иметь `HTTP`-запрос?](https://youtu.be/G4iYlbilozM?t=419)
+
+  GET/POST/DELETE/PUТ
+
+  
 - [Что такое `HTTP` cookie? Для чего они используются?](https://youtu.be/G4iYlbilozM?t=488)
+
+  Сервер отправляет с помощью SetCookie(). потом браузер их шлет в обратку.
+  
 - [Разница между `HTTP` и `HTTPS`?](https://youtu.be/xZLxdts7ZW4?t=31)
+
+  С шифрованием и без. Нужен SSL сертификат для https.
+
 - [Разница между `HTTP/1`  и `HTTP/2`?](https://youtu.be/-mWa7erZu64?t=265)
+
+  
 - [Как работает мультиплексирование в `HTTP/2`?](https://youtu.be/-mWa7erZu64?t=378)
+
+  
 - [Что такое “трехстороннее рукопожатие” (Triple handshake)?](https://youtu.be/__neFkxAO9s?t=409)
+
+  
 - [Разница между `PUT`- и `POST`-запросами?](https://youtu.be/ngyOYuTrUk8?t=29)
+
+  PUT - update, POST - create
+  
 - [Разница между протоколами `TCP` и `UDP`?](https://youtu.be/trriSYNrHw4?t=234)
+
+  
 - [Что такое `WebSocket`? В чем принцип его работы?](https://youtu.be/yvOXvZ8aEFo?t=237)
+
+  Протокол. Постоянное соединение - не надо слать кучу инфы каждый раз ведь сервер "помнит" кто мы. Соединение нужно разорвать на клиенте по окончанию работы.
+  
 - [Разница между Long-Polling, Websockets и Server-Sent Events?](https://youtu.be/xZLxdts7ZW4?t=98)
+  
+|Long-Polling|Websockets|Server-Sent Events|
+|----|----|----|
+| устанавливается соед. ждет ответ сервера. закрывается соед. и так по кругу | устанавливается соед. общаются. нужно закрыть соед | только сервер шлет запросы клиенту. EventSource сам переподключается при потере соед |
+| могут возникать задержки. потеря обновлений при переподключении | нужно добавлять прогу которая проверяет живо ли еще соединение ||
+
+  
 - [Как работает `JSONP`?](https://youtu.be/trriSYNrHw4?t=178)
+
+  
 - [Что такое IndexedDB в браузере? Преимущества IndexedDB?](https://youtu.be/V-m0sQ-hW58?t=653)
 
+  мини БД в браузере
   
 - [Что такое Service Workers?](https://youtu.be/V-m0sQ-hW58?t=727)
 - [Что такое Web Workers?](https://youtu.be/V-m0sQ-hW58?t=811)
